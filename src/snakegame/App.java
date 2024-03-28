@@ -7,16 +7,16 @@ public class App {
 	public static void main(String args[]) {
 		int boardWidth=600;
 		int boardHeight=boardWidth;
-		JFrame frame=new JFrame("Snake Game");
-		frame.setVisible(true);
-		frame.setSize(boardWidth,boardHeight);
-		frame.setLocationRelativeTo(null);
-		frame.setResizable(false);
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		JFrame frame1=new JFrame("Snake Game");
+		frame1.setVisible(true);
+		frame1.setSize(boardWidth,boardHeight);
+		frame1.setLocationRelativeTo(null);
+		frame1.setResizable(false);
+		frame1.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		SnakeGame snakeGame=new SnakeGame(boardWidth, boardHeight);
-		frame.add(snakeGame);
-		frame.pack();
+		frame1.add(snakeGame);
+		frame1.pack();
 		snakeGame.requestFocus();
 		
 	}
